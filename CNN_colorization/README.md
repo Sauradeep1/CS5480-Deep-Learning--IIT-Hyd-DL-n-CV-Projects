@@ -4,7 +4,7 @@ neural network for a task known as image colorization. That is, given a greyscal
 image, we wish to predict the colour at each pixel. This is a difficult problem for many
 reasons, one of which being that it is ill-posed: for a single greyscale image, there can be
 multiple, equally valid colourings.
-------------------------------------------------------------------------
+________________________________________________________________________________________
 (a) Colorization as Regression: Image colorization can be posed as a regression problem,
 where we build a model to predict the RGB intensities at each pixel given the
 greyscale input. In this case, the outputs are continuous, and so mean-squared error
@@ -24,7 +24,7 @@ Why could using the RGB color space be problematic?
 iv. (1 mark) Most state-of-the-art colorization models frame colorization as a classification
 problem instead of a regression problem. Why? (Hint: what does minimizing
 squared error encourage?)
----------------------------------------------------------------------------------
+______________________________________________________________________________________________
 (b) Colorization as Classification: We will select a subset of 24 colors and frame colorization
 as a pixel-wise classification problem, where we label each pixel with one of
 24 colors. The 24 colors are selected using k-means clustering over colors, and selecting
